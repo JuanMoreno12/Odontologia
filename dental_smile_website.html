@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Smile</title>
+  <style>
+    :root {
+      --main-bg: #fff;
+      --main-color: #000;
+      --accent: #cfa52e; /* Dorado */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--main-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background: var(--main-bg);
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--main-color);
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: var(--main-bg);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .service {
+      background-color: #f4f4f4;
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--main-color);
+      color: var(--main-bg);
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="WhatsApp Image 2025-05-12 at 10.04.00 AM.jpeg" alt="Logo Dental Smile">
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h1>Bienvenido a Dental Smile</h1>
+    <p>Transformamos tu sonrisa con tecnología, experiencia y cuidado personalizado.</p>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="service">
+      <h3>Ortodoncia</h3>
+      <p>Alineamos tus dientes para una sonrisa armónica y funcional.</p>
+    </div>
+    <div class="service">
+      <h3>Blanqueamiento</h3>
+      <p>Devuélvele el brillo natural a tu sonrisa con nuestro tratamiento profesional.</p>
+    </div>
+    <div class="service">
+      <h3>Implantes</h3>
+      <p>Soluciones permanentes y seguras para recuperar piezas dentales.</p>
+    </div>
+    <div class="service">
+      <h3>Limpieza Dental</h3>
+      <p>Mantené tu salud bucal con nuestras limpiezas profundas y personalizadas.</p>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Dental Smile - Todos los derechos reservados</p>
+    <p>Contáctanos: contacto@dentalsmile.com | +57 300 000 0000</p>
+  </footer>
+</body>
+</html>
